@@ -1,0 +1,25 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Recipe Sharing API",
+    "version": "1.0.0",
+    "description": "API for sharing recipes"
+  },
+  "paths": {
+    "/auth/register": {
+      "post": { "summary": "Register User" }
+    },
+    "/auth/login": {
+      "post": { "summary": "Login User" }
+    },
+    "/recipes": {
+      "get": { "summary": "Get all recipes" },
+      "post": { "summary": "Create a recipe" }
+    },
+    "/recipes/{id}": {
+      "get": { "summary": "Get one recipe" },
+      "put": { "summary": "Update a recipe" },
+      "delete": { "summary": "Delete a recipe" }
+    }
+  }
+}
