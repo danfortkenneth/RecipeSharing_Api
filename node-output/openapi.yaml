@@ -5,7 +5,7 @@ info:
   description: API documentation for a Node.js/Express-based Recipe Sharing platform with JWT Authentication.
 
 servers:
-  # FINAL LIVE URL: Tiyak na walang /api sa dulo para sa Vercel deployment.
+
   # Added by API Auto Mocking Plugin
   - description: SwaggerHub API Auto Mocking
     url: https://virtserver.swaggerhub.com/newerauniversity-9cc/recipe_sharing_api/1.0.0
