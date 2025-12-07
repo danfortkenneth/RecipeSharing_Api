@@ -1,107 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>API Documentation</title>
-
-    <!-- Swagger UI CSS -->
+<html>
+  <head>
+    <title>API Docs</title>
     <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist/swagger-ui.css" />
-
-    <style>
-        body {
-            background: #0d1117;
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        /* Top Header */
-        .header {
-            background: #161b22;
-            padding: 20px;
-            border-bottom: 1px solid #30363d;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .header h1 {
-            color: #f0f6fc;
-            margin: 0;
-            font-size: 26px;
-            letter-spacing: 1px;
-        }
-
-        .header .tag {
-            background: #238636;
-            color: white;
-            padding: 6px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        /* API Container */
-        #swagger-ui {
-            background: #0d1117 !important;
-            padding: 20px;
-        }
-
-        /* Remove default topbar */
-        .swagger-ui .topbar {
-            display: none;
-        }
-
-        /* OPBlock Colors */
-        .swagger-ui .opblock {
-            background: #161b22 !important;
-            border-color: #30363d !important;
-            border-radius: 10px;
-        }
-
-        .swagger-ui .opblock-summary {
-            background: #21262d !important;
-        }
-
-        .swagger-ui .btn {
-            background: #238636 !important;
-            border-radius: 6px !important;
-        }
-
-        .swagger-ui .btn:hover {
-            background: #2ea043 !important;
-        }
-
-        .swagger-ui .opblock-summary-method {
-            border-radius: 6px;
-        }
-
-        /* Text Colors */
-        .swagger-ui .info,
-        .swagger-ui .markdown p,
-        .swagger-ui .markdown h1,
-        .swagger-ui .markdown h2,
-        .swagger-ui .markdown h3 {
-            color: #c9d1d9 !important;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="header">
-        <h1>🚀 API Documentation</h1>
-        <div class="tag">v1.0</div>
-    </div>
-
+  </head>
+  <body>
     <div id="swagger-ui"></div>
-
-    <!-- Swagger Scripts -->
     <script src="https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js"></script>
     <script>
-        SwaggerUIBundle({
-            url: "openapi.yaml",
-            dom_id: "#swagger-ui"
-        });
+      SwaggerUIBundle({
+        url: "openapi.yaml",
+        dom_id: "#swagger-ui"
+      });
     </script>
-</body>
+  </body>
 </html>
